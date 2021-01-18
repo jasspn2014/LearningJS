@@ -137,5 +137,3 @@ let func = (a, b) => {
 // };
 
 // user.fullName();
-
-
