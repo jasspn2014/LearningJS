@@ -1,0 +1,47 @@
+.clock-container {
+    height: 300px;
+    width: 300px;
+  }
+  
+  .clock {
+    border-radius: 50%;
+    border: 8px solid crimson;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  .hh-hand,
+  .mm-hand,
+  .ss-hand {
+    margin-top: 20px;
+    height: 130px;
+    width: 8px;
+    background-color: crimson;
+    position: absolute;
+    left: 50%;
+    transform-origin: bottom right;
+    /* transform: translateX(-3px); */
+    /* transition: transform 0.05s ease;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
+  }
+  
+  .pin {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: crimson;
+    position: relative;
+    top: 50%;
+    transform: translateX(-3px) translateY(3px);
+    left: 50%;
+  }
+  
+  .mm-hand {
+    width: 6px;
+  }
+  
+  .ss-hand {
+    width: 4px;
+  }
+  

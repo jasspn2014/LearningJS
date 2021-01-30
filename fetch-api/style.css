@@ -1,0 +1,25 @@
+.users-display {
+    width: 100%;
+    margin: 20px;
+    min-height: 90vh;
+    padding: 20px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    height: 400px;
+    width: 30%;
+    margin: 20px;
+  }
+  
+  .user p{
+    text-align: center;
+    margin: 20px;
+  }

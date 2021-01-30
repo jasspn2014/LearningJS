@@ -1,4 +1,4 @@
-arr = [45, 100, 9436, 2, 114223, 1, 28, 33, 7112];
+export let arr = [45, 100, 9436, 2, 114223, 1, 28, 33, 7112];
 
 arr.sort((a, b) => {
   return a - b;
@@ -103,16 +103,16 @@ const people = [
 const bornIn1500s = inventors.filter((inventor) => {
   return inventor.year >= 1500 && inventor.year < 1600;
 });
-console.log(bornIn1500s);
+// console.log(bornIn1500s);
 
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors first and last names
 const firstName = inventors.map((inventor) => inventor.first);
-console.log(firstName);
+// console.log(firstName);
 
 const lastName = inventors.map((inventor) => inventor.last);
-console.log(lastName);
+// console.log(lastName);
 
 
 // Array.prototype.sort()
@@ -121,21 +121,21 @@ inventors.sort((a, b) => {
   return a.year - b.year;
 });
 
-console.log(inventors);
+// console.log(inventors);
 
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
 const passedYear = inventors.map((inventor) => inventor.passed);
 passedYear.sort((a, b) => a - b);
-console.log(passedYear[passedYear.length - 1] - passedYear[0]);
+// console.log(passedYear[passedYear.length - 1] - passedYear[0]);
 
 
 // 5. Sort the inventors by years lived
 inventors.sort((a, b) => {
   return b.passed - b.year - (a.passed - a.year);
 });
-console.log(inventors);
+// console.log(inventors);
 
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
@@ -166,7 +166,3 @@ const data = [
   "car",
   "truck",
 ];
-
-data.reduce(()=>{
-  
-})
